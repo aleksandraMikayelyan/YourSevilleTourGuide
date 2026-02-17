@@ -52,3 +52,37 @@ TourApp es una solución móvil avanzada de turismo inteligente diseñada para p
 ```bash
 git clone [https://github.com/aleksandraMikayelyan/YourSevilleTourGuide.git](https://github.com/aleksandraMikayelyan/YourSevilleTourGuide.git)
 cd YourSevilleTourGuide
+````
+**###2. Gestión de Dependencias**
+npm install
+# Alternativa para entornos Expo:
+npx expo install
+
+**###3. Configuración de Variables de Entorno**
+SUPABASE_URL=su_url_de_instancia
+SUPABASE_ANON_KEY=su_llave_anon_key
+
+**##4. Ejecución en Desarrollo**
+npx expo start
+---
+
+
+## LENGUAJE VISUAL (LOOK & FEEL)
+* **La interfaz se rige por estándares modernos de diseño visual:**
+
+* **Color Primario: Indigo (#4F46E5)**
+
+* **Color de Acento: Violeta (#7C3AED)**
+
+* **Color de Fondo: Soft Ice (#F0F2F9)**
+
+
+## ESTRUCTURA DE DIRECTORIOS
+
+├── src/
+│   ├── components/    # Módulos de interfaz reutilizables
+│   ├── screens/       # Vistas: Mapa, Perfil, Formularios, Registro, Edición
+│   ├── services/      # Lógica de conexión y configuración de Supabase
+│   ├── utils/         # Utilidades de sistema: Generación de PDF y formateo
+├── App.tsx            # Punto de entrada y configuración de navegación
+└── package.json       # Manifiesto de dependencias y scripts de sistema
