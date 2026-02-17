@@ -1,44 +1,54 @@
-TourApp: Audioguías InteligentesTourApp es una plataforma móvil de turismo inteligente que permite a los usuarios crear, gestionar y disfrutar de rutas turísticas personalizadas. La aplicación combina la potencia de Supabase para la gestión de datos, 
-Google Maps para la navegación y Text-to-Speech para una experiencia de audioguía inmersiva.
+# TOURAPP: AUDIOGUÍAS INTELIGENTES
 
-Características Principales
+TourApp es una solución móvil avanzada de turismo inteligente diseñada para permitir a los usuarios la creación, gestión y exploración de rutas turísticas personalizadas. El sistema integra la infraestructura de **Supabase** para el manejo de datos y autenticación, **Google Maps API** para la geolocalización y navegación, y tecnología **Text-to-Speech** para ofrecer una experiencia de audioguía inmersiva y automatizada.
 
--Audioguía Dinámica: Reproducción de historias mediante síntesis de voz con resaltado de texto en tiempo real.
--Mapas Interactivos: Visualización de rutas con polilíneas y marcadores personalizados.
--Generación de Informes: Exportación de los detalles del tour a PDF con imágenes de portada.
--Gestión de Perfiles: Personalización de usuario y carga de avatares mediante almacenamiento en la nube.
--Panel de Creador: Herramientas completas para añadir, editar y ordenar paradas en el mapa.
--Diseño Premium: Interfaz moderna basada en la paleta de colores Indigo & Violet.
+---
 
--Stack TecnológicoCoreReact Native / Expo: Desarrollo de la aplicación móvil.
--TypeScript: Tipado estático para un código más robusto.
--Supabase: Base de datos (PostgreSQL), Autenticación y Storage para imágenes.
--Dependencias ClavePara que este proyecto funcione correctamente, se han utilizado las siguientes librerías:
-  -LibreríaPropósito@supabase/supabase-jsCliente oficial para la comunicación con el Backend.
-  -react-native-mapsVisualización de mapas de Google/Apple.expo-speechMotor de texto a voz para la audioguía.
-  -expo-image-pickerAcceso a la galería para cambiar la foto de perfil.
-  -expo-print & expo-sharingGeneración y compartición de archivos PDF.
-  -@react-navigation/nativeGestión de la navegación entre pantallas.
-  -react-native-safe-area-contextManejo de áreas seguras (notches/barras de sistema).
+## CARACTERÍSTICAS PRINCIPALES
 
---Instalación y ConfiguraciónClonar el repositorio:Bashgit clone https://github.com/aleksandraMikayelyan/YourSevilleTourGuide.git
+* **Audioguía Dinámica**
+  Reproducción de narrativas históricas mediante síntesis de voz, sincronizada con el resaltado de texto en tiempo real para mejorar la accesibilidad y la retención.
 
+* **Mapas e Interfaz Geográfica**
+  Visualización avanzada de rutas mediante polilíneas dinámicas y marcadores personalizados para una navegación intuitiva en el destino.
+
+* **Sistema de Documentación**
+  Motor de exportación que transforma los detalles del tour en documentos PDF profesionales, incluyendo imágenes de portada y metadatos del trayecto.
+
+* **Gestión de Identidad**
+  Perfiles de usuario personalizados con carga de avatares integrada mediante almacenamiento de objetos en la nube.
+
+* **Panel de Administración del Creador**
+  Suite de herramientas dedicada a la curaduría de contenido, permitiendo añadir, editar y reordenar paradas geográficas con precisión.
+
+* **Arquitectura de Diseño Premium**
+  Interfaz de usuario de alta fidelidad centrada en la experiencia de uso, implementada con una paleta cromática Indigo & Violet.
+
+---
+
+## STACK TECNOLÓGICO
+
+### Núcleo del Sistema
+* **React Native / Expo**: Entorno de desarrollo para despliegue multiplataforma.
+* **TypeScript**: Implementación de tipado estático para garantizar la integridad y escalabilidad del código.
+* **Supabase**: Arquitectura Backend-as-a-Service basada en PostgreSQL, incluyendo sistemas de Autenticación y Storage.
+
+### Dependencias de Infraestructura
+| Librería | Propósito Técnico |
+| :--- | :--- |
+| **@supabase/supabase-js** | Cliente de integración para operaciones CRUD y autenticación. |
+| **react-native-maps** | Motor de renderizado de mapas y gestión de capas geográficas. |
+| **expo-speech** | Implementación del motor de síntesis de voz. |
+| **expo-image-picker** | Gestión de acceso a activos multimedia del dispositivo. |
+| **expo-print & expo-sharing** | Pipeline de generación y distribución de archivos PDF. |
+| **@react-navigation/native** | Gestión del ciclo de vida de la navegación y el stack de pantallas. |
+| **react-native-safe-area-context** | Control de diseño responsivo sobre áreas seguras de hardware. |
+
+---
+
+## INSTALACIÓN Y CONFIGURACIÓN
+
+### 1. Clonación del Repositorio
+```bash
+git clone [https://github.com/aleksandraMikayelyan/YourSevilleTourGuide.git](https://github.com/aleksandraMikayelyan/YourSevilleTourGuide.git)
 cd YourSevilleTourGuide
-Instalar dependencias:Bashnpm install
-# o si usas expo
-npx expo install
-
-Variables de Entorno:Crea un archivo .env o configura tu servicio de constantes con tus credenciales de Supabase:Code snippetSUPABASE_URL=tu_url_de_supabase
-
-SUPABASE_ANON_KEY=tu_llave_anon_key
-
-Ejecutar el proyecto:Bashnpx expo start
--- Capturas de Pantalla (Look & Feel)La aplicación utiliza un lenguaje de diseño moderno:Primario: Indigo (#4F46E5)Acento: Violeta (#7C3AED)Fondo: Soft Ice (#F0F2F9)📄 Estructura del ProyectoPlaintext
-
-|── src/
-│   ├── components/    # Componentes reutilizables
-│   ├── screens/       # Pantallas (Mapa, Perfil, Formulario, Registro, Edicion, Pantalla principal)
-│   ├── services/      # Configuración de Supabase
-│   ├── utils/         # Utilidades (Generación de PDF, formateo)
-├── App.tsx            # Navegador principal
-└── package.json       # Listado de dependencias
