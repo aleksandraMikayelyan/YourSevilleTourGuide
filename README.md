@@ -77,10 +77,13 @@ npx expo start
 * **Color de Fondo: Soft Ice (#F0F2F9)**
 
 ##Estructura del Proyecto
-Directorio / Archivo,Descripción,Contenido Principal
-src/components/,Módulos de interfaz reutilizables,"Botones, tarjetas, modales y elementos UI comunes."
-src/screens/,Vistas principales de la aplicación,"Mapa, Perfil, Formularios, Registro y Edición."
-src/services/,Lógica de datos y backend,"Conexión, consultas y configuración de Supabase."
-src/utils/,Utilidades y funciones auxiliares,"Generación de PDF, formateo de fechas y moneda."
-App.tsx,Punto de entrada,Configuración de navegación y proveedores (Providers).
-package.json,Manifiesto del proyecto,"Dependencias, scripts de ejecución y metadatos."
+### 📂 Arquitectura de Directorios
+
+| Directorio / Archivo | Propósito Técnico |
+| :--- | :--- |
+| **src/components/** | Módulos de interfaz reutilizables y átomos de UI. |
+| **src/screens/** | Controladores de vista principal (Mapa, Perfil, Formularios). |
+| **src/services/** | Capa de abstracción para lógica de Supabase y servicios externos. |
+| **src/utils/** | Funciones de soporte para procesamiento de PDF y formateo de datos. |
+| **App.tsx** | Punto de entrada, configuración de Providers y navegación raíz. |
+| **package.json** | Manifiesto de dependencias, scripts de entorno y configuración. |
