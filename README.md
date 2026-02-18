@@ -76,13 +76,11 @@ npx expo start
 
 * **Color de Fondo: Soft Ice (#F0F2F9)**
 
-
-## ESTRUCTURA DE DIRECTORIOS
-
-├── src/
-│   ├── components/    # Módulos de interfaz reutilizables
-│   ├── screens/       # Vistas: Mapa, Perfil, Formularios, Registro, Edición
-│   ├── services/      # Lógica de conexión y configuración de Supabase
-│   ├── utils/         # Utilidades de sistema: Generación de PDF y formateo
-├── App.tsx            # Punto de entrada y configuración de navegación
-└── package.json       # Manifiesto de dependencias y scripts de sistema
+##Estructura del Proyecto
+Directorio / Archivo,Descripción,Contenido Principal
+src/components/,Módulos de interfaz reutilizables,"Botones, tarjetas, modales y elementos UI comunes."
+src/screens/,Vistas principales de la aplicación,"Mapa, Perfil, Formularios, Registro y Edición."
+src/services/,Lógica de datos y backend,"Conexión, consultas y configuración de Supabase."
+src/utils/,Utilidades y funciones auxiliares,"Generación de PDF, formateo de fechas y moneda."
+App.tsx,Punto de entrada,Configuración de navegación y proveedores (Providers).
+package.json,Manifiesto del proyecto,"Dependencias, scripts de ejecución y metadatos."
