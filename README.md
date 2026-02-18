@@ -1,37 +1,54 @@
-# TOURAPP: AUDIOGUÍAS INTELIGENTES
+# Olé Sevilla: Aplicación De Gestion Turistica
 
-TourApp es una solución móvil avanzada de turismo inteligente diseñada para permitir a los usuarios la creación, gestión y exploración de rutas turísticas personalizadas. El sistema integra la infraestructura de **Supabase** para el manejo de datos y autenticación, **Google Maps API** para la geolocalización y navegación, y tecnología **Text-to-Speech** para ofrecer una experiencia de audioguía inmersiva y automatizada.
+**Olé Sevilla** es una solución móvil avanzada de turismo inteligente diseñada para permitir a los usuarios la creación, gestión y exploración de rutas turísticas personalizadas en el corazón de Andalucía. El sistema integra la infraestructura de **Supabase** para el manejo de datos, **Rasa Open Source** para la asistencia por IA y tecnología **Text-to-Speech** para ofrecer una experiencia de audioguía inmersiva y automatizada.
 
 ---
 
-## CARACTERÍSTICAS PRINCIPALES
+##  CARACTERÍSTICAS PRINCIPALES
+
+* **Asistente Virtual con IA (Rasa)**
+  Integración de un chatbot inteligente capaz de guiar al usuario por el **Real Alcázar**, **Santa Cruz** y el **Río**, resolviendo dudas sobre itinerarios y tarifas en tiempo real.
 
 * **Audioguía Dinámica**
-  Reproducción de narrativas históricas mediante síntesis de voz, sincronizada con el resaltado de texto en tiempo real para mejorar la accesibilidad y la retención.
+  Reproducción de narrativas históricas mediante síntesis de voz, sincronizada con el resaltado de texto para mejorar la accesibilidad durante el recorrido.
 
 * **Mapas e Interfaz Geográfica**
-  Visualización avanzada de rutas mediante polilíneas dinámicas y marcadores personalizados para una navegación intuitiva en el destino.
+  Visualización avanzada de rutas mediante marcadores personalizados y navegación intuitiva a través de `TourMapScreen`.
 
-* **Sistema de Documentación**
-  Motor de exportación que transforma los detalles del tour en documentos PDF profesionales, incluyendo imágenes de portada y metadatos del trayecto.
+* **Sistema de Documentación PDF**
+  Motor de exportación que transforma los detalles del tour en documentos PDF profesionales mediante `PdfUtils`, incluyendo metadatos del trayecto.
 
-* **Gestión de Identidad**
-  Perfiles de usuario personalizados con carga de avatares integrada mediante almacenamiento de objetos en la nube.
+* **Gestión de Identidad y Perfiles**
+  Sistema robusto de autenticación y perfiles de usuario personalizados con almacenamiento en la nube vía **Supabase**.
 
 * **Panel de Administración del Creador**
-  Suite de herramientas dedicada a la curaduría de contenido, permitiendo añadir, editar y reordenar paradas geográficas con precisión.
-
-* **Arquitectura de Diseño Premium**
-  Interfaz de usuario de alta fidelidad centrada en la experiencia de uso, implementada con una paleta cromática Indigo & Violet.
+  Suite de herramientas (`EditStopsScreen`) para la curaduría de contenido, permitiendo añadir, editar y reordenar paradas geográficas con precisión.
 
 ---
 
 ## STACK TECNOLÓGICO
 
 ### Núcleo del Sistema
-* **React Native / Expo**: Entorno de desarrollo para despliegue multiplataforma.
-* **TypeScript**: Implementación de tipado estático para garantizar la integridad y escalabilidad del código.
-* **Supabase**: Arquitectura Backend-as-a-Service basada en PostgreSQL, incluyendo sistemas de Autenticación y Storage.
+| Componente | Tecnología |
+| :--- | :--- |
+| **Frontend** | React Native + Expo (TypeScript) |
+| **IA Backend** | Rasa Open Source |
+| **Base de Datos** | Supabase |
+| **Identidad** | Logo personalizado "Olé Sevilla" |
+
+### Interfaz y Diseño
+* **Identidad Visual**: Paleta cromática optimizada y branding personalizado bajo la marca **Olé Sevilla**.
+* **Navegación**: Menú lateral dinámico (`ChatDrawer`) para una experiencia de usuario fluida.
+
+---
+
+## GUÍA DE DESPLIEGUE RÁPIDO
+
+1. **Dependencias**: `npm install`
+2. **Servidor IA**: 
+   ```bash
+   cd rasa-pro-iesVelazquez && rasa run --enable-api --cors "*"
+   ```
 
 ### Dependencias de Infraestructura
 | Librería | Propósito Técnico |
@@ -76,8 +93,8 @@ npx expo start
 
 * **Color de Fondo: Soft Ice (#F0F2F9)**
 
-##Estructura del Proyecto
-### 📂 Arquitectura de Directorios
+
+###  Arquitectura de Directorios
 
 | Directorio / Archivo | Propósito Técnico |
 | :--- | :--- |
