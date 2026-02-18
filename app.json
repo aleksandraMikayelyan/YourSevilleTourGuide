@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "YourSevilleTourGuide",
+    "name": "Olé Seville",
     "slug": "YourSevilleTourGuide",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/Icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,18 +17,15 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Icon.png"
     },
-    "plugins": [
-      "expo-build-properties",
-      "expo-font"
-    ]
+    "plugins": ["expo-build-properties", "expo-font"]
   }
 }

@@ -15,8 +15,7 @@ interface Message {
   isUser: boolean;
 }
 
-const RASA_URL =
-  "https://upgraded-space-goldfish-pj4p5v4rv4pv264q7-5005.app.github.dev";
+const RASA_URL = "https://super-chainsaw-r45vv4g5jrpg354pv-5005.app.github.dev";
 
 export default function ChatDrawer() {
   const [messages, setMessages] = useState<Message[]>([]);
